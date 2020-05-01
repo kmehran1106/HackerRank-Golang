@@ -1,4 +1,4 @@
-package main
+package time_conversion
 
 import "testing"
 
@@ -16,7 +16,7 @@ func TestCode(t *testing.T) {
 
 	for _, test := range tests {
 		if got := TimeConversion(test.input); got != test.output {
-			t.Errorf("TimeConversion(%q) = %v", test.input, got)
+			t.Errorf("TimeConversion(%v) = %v", test.input, got)
 		}
 	}
 }
