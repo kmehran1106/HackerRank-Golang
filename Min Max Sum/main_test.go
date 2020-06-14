@@ -20,7 +20,7 @@ func TestCode(t *testing.T) {
 		got := MinMaxSum(test.input)
 		for i, v := range got {
 			if v != test.output[i] {
-				t.Errorf("PlusMinus Got%v while Expecting %v", got, test.output)
+				t.Errorf("MinMaxSum Got%v while Expecting %v", got, test.output)
 			}
 		}
 	}
