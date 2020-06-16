@@ -1,15 +1,14 @@
 package main
 
 import (
-	"strings"
-	"strconv"
 	"bufio"
-	"os"
 	"fmt"
+	"os"
+	"strconv"
+	"strings"
 )
 
-
-func TimeConversion (s string) string {
+func TimeConversion(s string) string {
 	first := s[0:2]
 	last := s[len(s)-2:]
 
@@ -17,7 +16,7 @@ func TimeConversion (s string) string {
 
 	var n string
 	if last == "PM" && h < 12 {
-		n = strconv.Itoa(h+12)
+		n = strconv.Itoa(h + 12)
 	} else if last == "PM" && h == 12 {
 		n = strconv.Itoa(h)
 	} else if last == "AM" && h == 12 {
@@ -30,9 +29,9 @@ func TimeConversion (s string) string {
 	r = strings.Replace(r, last, "", -1)
 
 	return r
-} 
+}
 
-func main () {
+func main() {
 	reader := bufio.NewReader(os.Stdin)
 	fmt.Print("Enter Standard 12h Time : ")
 	s, _ := reader.ReadString('\n')

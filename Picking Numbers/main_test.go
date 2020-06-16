@@ -10,19 +10,19 @@ func TestCode(t *testing.T) {
 		output int
 	}{
 		{
-			input:  []int{1, 1, 2, 2, 3},
-			output: 1,
+			input:  []int{1, 2, 2, 1, 2},
+			output: 5,
 		},
 		{
-			input:  []int{1, 4, 4, 4, 5, 3},
-			output: 4,
+			input:  []int{66, 66, 66, 66, 66, 66},
+			output: 6,
 		},
 	}
 
 	for _, test := range tests {
-		if got := migratoryBirds(test.input); got != test.output {
+		if got := pickingNumbers(test.input); got != test.output {
 			t.Errorf(
-				"Input Array of Birds %v; Expected %v; Got %v",
+				"Input Array %v; Expected %v; Got %v",
 				test.input, test.output, got,
 			)
 		}

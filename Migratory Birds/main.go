@@ -10,7 +10,7 @@ func migratoryBirds(slice []int) (x int) {
 	for _, v := range slice {
 		m[v]++
 		if m[v] > m[x] || (m[v] == m[x] && v < x) {
-			x=v
+			x = v
 		}
 	}
 	return x
@@ -19,4 +19,3 @@ func migratoryBirds(slice []int) (x int) {
 func main() {
 	fmt.Println(migratoryBirds([]int{1, 1, 2, 2, 3}))
 }
-

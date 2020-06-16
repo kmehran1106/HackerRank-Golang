@@ -2,14 +2,13 @@ package main
 
 import "testing"
 
-
 func TestCode(t *testing.T) {
-	inputOne := []int {1, 2, 1, 2, 1, 3, 2}
-	inputTwo := []int {10, 20, 20, 10, 10, 30, 50, 10, 20}
+	inputOne := []int{1, 2, 1, 2, 1, 3, 2}
+	inputTwo := []int{10, 20, 20, 10, 10, 30, 50, 10, 20}
 	var tests = []struct {
-		input []int
+		input  []int
 		output int
-	} {
+	}{
 		{inputOne, 2},
 		{inputTwo, 3},
 	}

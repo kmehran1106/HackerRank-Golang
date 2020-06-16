@@ -2,7 +2,6 @@ package main
 
 import "fmt"
 
-
 func SockMerchant(array []int) (pairs int) {
 	sockMap := make(map[int]int)
 

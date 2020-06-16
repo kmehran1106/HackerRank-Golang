@@ -18,6 +18,5 @@ func catsAndMouse(x, y, z int) (v string) {
 }
 
 func main() {
-	fmt.Println(catsAndMouse(1,2,3))
+	fmt.Println(catsAndMouse(1, 2, 3))
 }
-

@@ -2,12 +2,11 @@ package main
 
 import "testing"
 
-
 func TestCode(t *testing.T) {
 	var tests = []struct {
-		input int
+		input  int
 		output string
-	} {
+	}{
 		{2017, "13.09.2017"},
 		{2016, "12.09.2016"},
 		{1800, "12.09.1800"},

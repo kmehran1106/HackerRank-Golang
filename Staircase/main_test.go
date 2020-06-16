@@ -2,12 +2,11 @@ package main
 
 import "testing"
 
-
 func TestCode(t *testing.T) {
 	var tests = []struct {
-		input int
+		input  int
 		output string
-	} {
+	}{
 		{2, " #\n##"},
 		{3, "  #\n ##\n###"},
 	}
