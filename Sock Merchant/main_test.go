@@ -1,4 +1,4 @@
-package sock_merchant
+package main
 
 import "testing"
 

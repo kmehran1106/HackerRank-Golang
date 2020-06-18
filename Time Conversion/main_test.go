@@ -1,4 +1,4 @@
-package time_conversion
+package main
 
 import "testing"
 

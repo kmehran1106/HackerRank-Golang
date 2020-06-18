@@ -1,11 +1,11 @@
-package code
+package main
 
 import (
+	"fmt"
 	"strconv"
 )
 
-// TestCode : Function Imported in main.go
-func TestCode(year int) (date string) {
+func ProgrammersDay(year int) (date string) {
 	isLeap := false
 	if (
 		(year < 1918 && year % 4 == 0) || 
@@ -30,11 +30,6 @@ func TestCode(year int) (date string) {
 
 }
 
-// package main
-// import (
-// 	"fmt"
-// 	"strconv"
-// )
-// func main() {
-// 	fmt.Println(ProgrammersDay(2017))
-// }
+func main() {
+	fmt.Println(ProgrammersDay(2017))
+}

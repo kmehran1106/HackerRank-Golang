@@ -1,8 +1,11 @@
-package time_conversion
+package main
 
 import (
 	"strings"
 	"strconv"
+	"bufio"
+	"os"
+	"fmt"
 )
 
 
@@ -28,3 +31,11 @@ func TimeConversion (s string) string {
 
 	return r
 } 
+
+func main () {
+	reader := bufio.NewReader(os.Stdin)
+	fmt.Print("Enter Standard 12h Time : ")
+	s, _ := reader.ReadString('\n')
+	s = strings.TrimSpace(s)
+	fmt.Println(TimeConversion(s))
+}

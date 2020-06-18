@@ -1,4 +1,6 @@
-package sock_merchant
+package main
+
+import "fmt"
 
 
 func SockMerchant(array []int) (pairs int) {
@@ -19,12 +21,7 @@ func SockMerchant(array []int) (pairs int) {
 	return pairs
 }
 
-
-// package main
-// import (
-// 	"fmt"
-// )
-// func main() {
-// 	s := []int{1, 2, 1, 2}
-// 	fmt.Println(SockMerchant(s))
-// }
+func main() {
+	s := []int{1, 2, 1, 2}
+	fmt.Println(SockMerchant(s))
+}

@@ -1,4 +1,4 @@
-package programmers_day
+package main
 
 import "testing"
 
