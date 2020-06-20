@@ -7,18 +7,18 @@ import (
 func TestCode(t *testing.T) {
 	var tests = []struct {
 		threshold int
-		timings []int
-		output bool
+		timings   []int
+		output    bool
 	}{
 		{
 			threshold: 3,
-			timings: []int{-1, -3, 4, 2},
-			output: true,
+			timings:   []int{-1, -3, 4, 2},
+			output:    true,
 		},
 		{
 			threshold: 2,
-			timings: []int{0, -1, 2, 1},
-			output: false,
+			timings:   []int{0, -1, 2, 1},
+			output:    false,
 		},
 	}
 

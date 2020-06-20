@@ -7,7 +7,9 @@ import (
 func angryProfessorCancelsClass(threshold int, timings []int) bool {
 	count := 0
 	for _, v := range timings {
-		if v <= 0 {count++}
+		if v <= 0 {
+			count++
+		}
 	}
 	return count < threshold
 }

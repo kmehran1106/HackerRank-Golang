@@ -7,13 +7,13 @@ import (
 func TestCode(t *testing.T) {
 	var tests = []struct {
 		scores []int
-		max int
-		min int
+		max    int
+		min    int
 	}{
 		{
 			scores: []int{10, 5, 20, 20, 4, 5, 2, 25, 1},
-			max: 2,
-			min: 4,
+			max:    2,
+			min:    4,
 		},
 	}
 

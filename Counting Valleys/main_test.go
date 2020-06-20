@@ -6,7 +6,7 @@ import (
 
 func TestCode(t *testing.T) {
 	var tests = []struct {
-		input []string
+		input  []string
 		output int
 	}{
 		{input: []string{"U", "D", "D", "D", "U", "D", "U", "U"}, output: 1},

@@ -7,13 +7,13 @@ import (
 func TestCode(t *testing.T) {
 	var tests = []struct {
 		heights []int
-		input string
-		output int
+		input   string
+		output  int
 	}{
 		{
 			heights: []int{1, 3, 1, 3, 1, 4, 1, 3, 2, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7},
-			input: "abc",
-			output: 9,
+			input:   "abc",
+			output:  9,
 		},
 	}
 

@@ -8,7 +8,7 @@ func pdfViewer(heights []int, input string) (output int) {
 	diff := 97
 	max := 0
 	for _, v := range input {
-		m := heights[int(v) - diff]
+		m := heights[int(v)-diff]
 		if m > max {
 			max = m
 		}
