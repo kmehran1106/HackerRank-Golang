@@ -23,7 +23,7 @@ func TestCode(t *testing.T) {
 	}
 
 	for _, test := range tests {
-		if got := angryProfessorCancelsClass(test.threshold, test.timings); got != test.output {
+		if got := isCancelled(test.threshold, test.timings); got != test.output {
 			t.Errorf(
 				"Given Threshold %v and Timings %v\n; Expected %v; Got %v",
 				test.threshold, test.timings, test.output, got,

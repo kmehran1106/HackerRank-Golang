@@ -4,7 +4,7 @@ import (
 	"fmt"
 )
 
-func angryProfessorCancelsClass(threshold int, timings []int) bool {
+func isCancelled(threshold int, timings []int) bool {
 	count := 0
 	for _, v := range timings {
 		if v <= 0 {
@@ -16,5 +16,5 @@ func angryProfessorCancelsClass(threshold int, timings []int) bool {
 
 func main() {
 	scores := []int{-1, -3, 4, 2}
-	fmt.Println(angryProfessorCancelsClass(3, scores))
+	fmt.Println(isCancelled(3, scores))
 }
