@@ -22,18 +22,18 @@ func AppendDelete(s, t string, k int) (output bool) {
 		common++
 	}
 	/*
-		CASE1:
-	        if len(s) < k - len(t), then we can delete all the letters,
-	        keep on going until remaining(k) == len(t), then append len(t)
-	    CASE2:
-	        if len(s) + len(t) - 2*common > k,
-	        then we cannot solve this case
-	    CASE3:
-	        if len(s) - common + len(t) - common is ODD, then k must be ODD as well
-	        if len(s) - common + len(t) - common is EVEN, then k must be EVEN as well
-	        otherwise, we cannot solve this case
-	    CASE4:
-	        NO
+			CASE1:
+		        if len(s) < k - len(t), then we can delete all the letters,
+		        keep on going until remaining(k) == len(t), then append len(t)
+		    CASE2:
+		        if len(s) + len(t) - 2*common > k,
+		        then we cannot solve this case
+		    CASE3:
+		        if len(s) - common + len(t) - common is ODD, then k must be ODD as well
+		        if len(s) - common + len(t) - common is EVEN, then k must be EVEN as well
+		        otherwise, we cannot solve this case
+		    CASE4:
+		        NO
 	*/
 
 	if lenS < k-lenT {
