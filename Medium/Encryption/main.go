@@ -32,7 +32,6 @@ func encryption(s string) (output string) {
 		}
 		array = append(array, sub)
 	}
-	fmt.Println(array)
 
 	for i := 0; i < c; i++ {
 		t := ""
