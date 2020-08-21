@@ -4,51 +4,35 @@ import (
 	"fmt"
 )
 
-func gridSearch(grid, pattern []string) bool {
-	gRow := len(grid) - 1
-	gCol := len(grid[0]) - 1
+func absolutePermutation(n, k int) (output []int) {
+	a := make(map[int]bool)
 
-	pRow := len(pattern) - 1
-	pCol := len(pattern[0]) - 1
+	for i := 1; i <= n; i++ {
+		a[i] = true
+	}
 
-	c := 0
-
-	for i := 0; i <= gRow-pRow; i++ {
-		for j := 0; j <= gCol-pCol; j++ {
-			if grid[i][j:j+pCol+1] == pattern[0] {
-				for k := 1; k < len(pattern); k++ {
-					if grid[i+k][j:j+pCol+1] == pattern[k] {
-						c++
-						if c == len(pattern)-1 {
-							return true
-						}
-					} else {
-						c = 0
-					}
-				}
+	if k == 0 {
+		for i := 1; i <= n; i++ {
+			output = append(output, i)
+		}
+	} else if (n/k)%2 != 0 {
+		output = append(output, -1)
+	} else {
+		condition := true
+		for i := 1; i <= n; i++ {
+			if condition {
+				output = append(output, i+k)
+			} else {
+				output = append(output, i-k)
+			}
+			if i%k == 0 {
+				condition = !condition
 			}
 		}
 	}
-	return false
+	return output
 }
 
 func main() {
-	g := []string{
-		"7283455864",
-		"6731158619",
-		"8988242643",
-		"3830589324",
-		"2229505813",
-		"5633845374",
-		"6473530293",
-		"7053106601",
-		"0834282956",
-		"4607924137",
-	}
-	p := []string{
-		"9505",
-		"3845",
-		"3530",
-	}
-	fmt.Println(gridSearch(g, p))
+	fmt.Println(absolutePermutation(10, 1))
 }
