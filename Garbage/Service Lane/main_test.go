@@ -42,19 +42,19 @@ func TestCode(t *testing.T) {
 			output:     1,
 		},
 		{
-			widthArray: []int{1, 2, 2, 2, 1,},
+			widthArray: []int{1, 2, 2, 2, 1},
 			lowerIndex: 2,
 			upperIndex: 3,
 			output:     2,
 		},
 		{
-			widthArray: []int{1, 2, 2, 2, 1,},
+			widthArray: []int{1, 2, 2, 2, 1},
 			lowerIndex: 1,
 			upperIndex: 4,
 			output:     1,
 		},
 		{
-			widthArray: []int{1, 2, 2, 2, 1,},
+			widthArray: []int{1, 2, 2, 2, 1},
 			lowerIndex: 2,
 			upperIndex: 4,
 			output:     1,

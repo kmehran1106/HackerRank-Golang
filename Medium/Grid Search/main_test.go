@@ -6,9 +6,9 @@ import (
 
 func TestCode(t *testing.T) {
 	var tests = []struct {
-		grid  []string
+		grid    []string
 		pattern []string
-		output bool
+		output  bool
 	}{
 		{
 			grid: []string{

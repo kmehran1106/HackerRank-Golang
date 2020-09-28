@@ -22,6 +22,6 @@ func TestCode(t *testing.T) {
 			if v != test.output[i] {
 				t.Errorf("Absolute Permutation Function Got%v while Expecting %v", got, test.output)
 			}
-		}
+		}k
 	}
 }
